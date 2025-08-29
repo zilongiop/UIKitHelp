@@ -1,0 +1,6 @@
+Target dependency graph (3 targets)
+Target 'Pods-UIKitHelp_Tests' in project 'Pods'
+➜ Explicit dependency on target 'Pods-UIKitHelp_Example' in project 'Pods'
+Target 'Pods-UIKitHelp_Example' in project 'Pods'
+➜ Explicit dependency on target 'UIKitHelp' in project 'Pods'
+Target 'UIKitHelp' in project 'Pods' (no dependencies)

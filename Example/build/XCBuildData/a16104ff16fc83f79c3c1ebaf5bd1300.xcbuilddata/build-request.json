@@ -1,0 +1,52 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98844c36f8c2574a218f520229709a1fe5"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e985c52bfc4f1f21d3e9f75deea98bbe9c7"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e980b240c922dc4612b32652459118e86ac"
+    }
+  ],
+  "containerPath" : "/Users/mayuanyuan/developOnline/UIKitHelp/Example/Pods/Pods.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/mayuanyuan/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/mayuanyuan/Library/Developer/Xcode/DerivedData/Pods-dbsiozrsvvluqzcsturckdusniah/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/mayuanyuan/Library/Developer/Xcode/DerivedData/Pods-dbsiozrsvvluqzcsturckdusniah/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}
