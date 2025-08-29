@@ -1,0 +1,6 @@
+framework module Pods_UIKitHelp_Tests {
+  umbrella header "Pods-UIKitHelp_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
