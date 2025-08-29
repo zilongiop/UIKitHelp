@@ -22,7 +22,7 @@ pod 'UIKitHelp'
 
 ## Author
 
-mayuanyuan, mayuanyuan@xiaohongshu.net
+oulu, zilongiop@163.com
 
 ## License
 
