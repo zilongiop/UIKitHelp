@@ -16,6 +16,8 @@ class ViewController: UIViewController {
         btn.backgroundColor(color: .green).title(title: "点击我").onClick {[weak self] in
             self?.handleBtnClick()
         }
+        
+        btn.title("被撞了", .highlighted).titleColor(.red, .highlighted)
         btn.frame = CGRect(x: 50, y: 200, width: 200, height: 50)
         view.addSubview(btn)
         

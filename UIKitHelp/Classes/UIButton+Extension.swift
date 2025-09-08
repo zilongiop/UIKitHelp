@@ -9,15 +9,41 @@ import Foundation
 import UIKit
 
 public extension UIButton {
-    func title(title:String) -> Self {
+    func title(title: String) -> Self {
         setTitle(title, for: .normal)
         return self
     }
     
-    func titleColor(color:UIColor) -> Self {
+    func title(_ title: String, _ state: UIControlState) -> Self {
+        setTitle(title, for: state)
+        return self
+    }
+    
+    func titleColor(color: UIColor) -> Self {
         setTitleColor(color, for: .normal)
         return self
     }
+    
+    func titleColor(_ color: UIColor, _ state: UIControlState) -> Self {
+        setTitleColor(color, for: state)
+        return self
+    }
+    
+    func font(_ font: UIFont) -> Self {
+        titleLabel?.font = font
+        return self
+    }
+     
+    func imageNormal(_ image: UIImage) -> Self {
+        setImage(image, for: .normal)
+        return self
+    }
+    
+    func imageNormal(_ image: UIImage, _ state: UIControlState) -> Self {
+        setImage(image, for: state)
+        return self
+    }
+    
     
     
     private struct ButtonKeys {
