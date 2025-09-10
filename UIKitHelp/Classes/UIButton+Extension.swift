@@ -14,7 +14,7 @@ public extension UIButton {
         return self
     }
     
-    func title(_ title: String, _ state: UIControlState) -> Self {
+    func title(_ title: String, _ state: UIControl.State) -> Self {
         setTitle(title, for: state)
         return self
     }
@@ -24,7 +24,7 @@ public extension UIButton {
         return self
     }
     
-    func titleColor(_ color: UIColor, _ state: UIControlState) -> Self {
+    func titleColor(_ color: UIColor, _ state: UIControl.State) -> Self {
         setTitleColor(color, for: state)
         return self
     }
@@ -39,7 +39,7 @@ public extension UIButton {
         return self
     }
     
-    func imageNormal(_ image: UIImage, _ state: UIControlState) -> Self {
+    func imageNormal(_ image: UIImage, _ state: UIControl.State) -> Self {
         setImage(image, for: state)
         return self
     }

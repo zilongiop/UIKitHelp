@@ -17,7 +17,7 @@ class ViewController: UIViewController {
             self?.handleBtnClick()
         }
         
-        btn.title("被撞了", .highlighted).titleColor(.red, .highlighted)
+        btn.title("被撞了", .highlighted).titleColor(.red, .highlighted).font(.systemFont(ofSize: 30))
         btn.frame = CGRect(x: 50, y: 200, width: 200, height: 50)
         view.addSubview(btn)
         
