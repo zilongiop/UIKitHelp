@@ -29,6 +29,14 @@ class ViewController: UIViewController {
         }
         lab.frame = CGRectMake(0, 100, self.view.width, 20)
         view.addSubview(lab)
+        
+        let txfv = UITextField(frame: CGRect(x: 50, y: 250, width: 200, height: 45))
+        txfv.placeholder("请输入您的幸运数字")
+        txfv.border(color: .black, width: 1.5).borderRadius(radius: 15).keyboardType(.numberPad).returnType(.done).leftSpace(15).rightSpace(15)
+        txfv.clearButtonMode(.whileEditing).tintColor(.red).showDefaultClearButton(true)
+        view.addSubview(txfv)
+//        let clearButtonImage = UIImage(named: "clearButton", in: UIKitHelpManager.podBundle, compatibleWith: nil)
+       
         // Do any additional setup after loading the view, typically from a nib.
     }
     func handleBtnClick() {

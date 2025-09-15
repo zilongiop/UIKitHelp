@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UIKitHelp-UIKitHelpAssets.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>UIKitHelp.xcscheme</key>
 		<dict>
 			<key>isShown</key>

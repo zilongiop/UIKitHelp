@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "UIKitHelp/Classes/*.swift"
+  "source_files": "UIKitHelp/Classes/*.swift",
+  "resource_bundles": {
+    "UIKitHelpAssets": [
+      "UIKitHelp/Assets/*.{xcassets,png}"
+    ]
+  }
 }

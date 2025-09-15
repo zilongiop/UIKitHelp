@@ -34,17 +34,20 @@ public extension UIButton {
         return self
     }
      
-    func imageNormal(_ image: UIImage) -> Self {
+    func imageNormal(_ image: UIImage?) -> Self {
         setImage(image, for: .normal)
         return self
     }
     
-    func imageNormal(_ image: UIImage, _ state: UIControl.State) -> Self {
+    func image(_ image: UIImage, _ state: UIControl.State) -> Self {
         setImage(image, for: state)
         return self
     }
     
-    
+    func imageBackground(_ image: UIImage, _ state: UIControl.State) -> Self {
+        setBackgroundImage(image, for: state)
+        return self
+    }
     
     private struct ButtonKeys {
         @MainActor static var tapActionKey = "UIButton.tapAction"

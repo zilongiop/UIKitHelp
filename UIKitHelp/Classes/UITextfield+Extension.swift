@@ -48,12 +48,75 @@ public extension UITextField {
         return self
     }
     
+    /// 设置键盘样式（链式）
+    /// - Parameter style: 键盘样式（如 .roundedRect）
+    /// - Returns: 当前 UITextField 实例
+    func keyboardType(_ style: UIKeyboardType) -> Self {
+        self.keyboardType = style
+        return self
+    }
+    
+    /// 设置内容左边距
+    func leftSpace(_ space: Double) -> Self {
+        let leftSpacer = UIView(frame: CGRect(x: 0, y: 0, width: space, height: self.bounds.height))
+        leftSpacer.backgroundColor = .clear
+        self.leftView = leftSpacer
+        self.leftViewMode = .always
+        return self
+    }
+    
+    /// 设置内容右边距
+    func rightSpace(_ space: Double) -> Self {
+        let rightSpacer = UIView(frame: CGRect(x: 0, y: 0, width: space, height: self.bounds.height))
+        rightSpacer.backgroundColor = .clear
+        self.rightView = rightSpacer
+        self.rightViewMode = .always
+        return self
+    }
+    
+    /// 设置回车键样式
+    func returnType(_ style: UIReturnKeyType) -> Self {
+        self.returnKeyType = style
+        return self
+    }
     /// 设置清除按钮模式（链式）
     /// - Parameter mode: 清除按钮模式（如 .whileEditing）
     /// - Returns: 当前 UITextField 实例
     func clearButtonMode(_ mode: UITextField.ViewMode) -> Self {
         self.clearButtonMode = mode
         return self
+    }
+    
+    func tintColor(_ color: UIColor) -> Self {
+        self.tintColor = color
+        return self
+    }
+    
+    func showDefaultClearButton(_ show: Bool) -> Self {
+        if show == false {
+            self.rightView = nil
+            return self
+        }
+        let clearButton = UIButton(type: .system)
+        print(UIKitHelpManager.podBundle.bundlePath)  // 输出类似：/path/to/PodName.bundle
+
+        let clearButtonImage = UIImage(
+                    named: "clearButton",
+                    in: Bundle.assetBundle,
+                    compatibleWith: nil
+                )
+        clearButton.imageBackground(clearButtonImage!, .normal)
+        clearButton.frame = CGRect(x: 0, y: 0, width: 30, height: 20)
+        clearButton.backgroundColor(color: .clear)
+        clearButton.addTarget(self, action: #selector(clearText), for: .touchUpInside)
+        self.rightView = clearButton
+        self.rightViewMode = .whileEditing // 与清除按钮模式同步
+
+        return self
+    }
+    
+    @objc func clearText() {
+        self.text = ""
     }
     
     func maxLength(_ maxLength: Int) -> Self {

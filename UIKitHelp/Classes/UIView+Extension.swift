@@ -24,7 +24,7 @@ public extension UIView {
         return self
     }
     
-    func btnRadius(radius: CGFloat) -> Self {
+    func borderRadius(radius: CGFloat) -> Self {
         layer.cornerRadius = radius
         return self
     }
@@ -72,4 +72,6 @@ public extension UIView {
     
     
 }
+
+
 
