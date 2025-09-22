@@ -44,7 +44,7 @@ public extension UIButton {
         return self
     }
     
-    func imageBackground(_ image: UIImage, _ state: UIControl.State) -> Self {
+    func imageBackground(_ image: UIImage?, _ state: UIControl.State) -> Self {
         setBackgroundImage(image, for: state)
         return self
     }

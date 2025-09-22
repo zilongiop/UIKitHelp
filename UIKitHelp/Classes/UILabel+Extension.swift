@@ -50,4 +50,10 @@ public extension UILabel {
            )
            return self
        }
+    
+    /// 变更字符对其方式
+    func textAlign(_ align: NSTextAlignment) -> Self {
+        self.textAlignment = align
+        return self
+    }
 }
