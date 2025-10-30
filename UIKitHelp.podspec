@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIKitHelp'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of UIKitHelp.'
 
 # This description is used to generate tags and improve search results.
@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'UIKitHelp/Classes/*.swift'
   
    s.resource_bundles = {
-     'UIKitHelpAssets' => ['UIKitHelp/Assets/*.{xcassets,png}']
+     'UIKitHelp' => ['UIKitHelp/Assets/*.xcassets']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

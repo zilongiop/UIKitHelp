@@ -1,5 +1,5 @@
 PODS:
-  - UIKitHelp (0.1.0)
+  - UIKitHelp (0.1.1)
 
 DEPENDENCIES:
   - UIKitHelp (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  UIKitHelp: 996de02be309db93d994c504e13a7c5376429f93
+  UIKitHelp: a8b0676e558683653920700bddf5841246f78b2f
 
 PODFILE CHECKSUM: 125f83bc9075a7fe094c1fe8ba3c0c1b7d86a6c8
 

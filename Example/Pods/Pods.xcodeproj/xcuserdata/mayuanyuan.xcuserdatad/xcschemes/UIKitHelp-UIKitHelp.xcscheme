@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "87CA29AAE6ECBA202CBEFD0CF55F57CF"
-               BuildableName = "UIKitHelpAssets.bundle"
-               BlueprintName = "UIKitHelp-UIKitHelpAssets"
+               BlueprintIdentifier = "00A677909C4E9506428070B50D08B57A"
+               BuildableName = "UIKitHelp.bundle"
+               BlueprintName = "UIKitHelp-UIKitHelp"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

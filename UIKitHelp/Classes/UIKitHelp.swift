@@ -17,7 +17,7 @@ class UIKitHelpManager {
 extension Bundle {
     static var assetBundle: Bundle? = {
         let bundlePod = UIKitHelpManager.podBundle
-        let path = UIKitHelpManager.podBundle.path(forResource: "UIKitHelpAssets", ofType: "bundle")
+        let path = UIKitHelpManager.podBundle.path(forResource: "UIKitHelp", ofType: "bundle")
         if path == nil {
             return nil
         }
